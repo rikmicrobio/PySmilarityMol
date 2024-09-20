@@ -47,14 +47,9 @@ sns.heatmap(df_euclidean, cmap="YlGnBu", annot=True)
 plt.title("Euclidean Distance")
 plt.show()
 
-Step 2: Hierarchical Clustering and Dendrogram
+## Step 2: Hierarchical Clustering and Dendrogram
 
-Using the Tanimoto similarity matrix, we apply hierarchical clustering to identify groups of similar compounds. The clustering result is visualized as a dendrogram.
-
-python
-Always show details
-
-from scipy.cluster import hierarchy
+### Using the Tanimoto similarity matrix, we apply hierarchical clustering to identify groups of similar compounds. The clustering result is visualized as a dendrogram.
 
 # Perform hierarchical clustering
 Z = hierarchy.linkage(df_tanimoto, method='ward')
@@ -65,12 +60,9 @@ dn = hierarchy.dendrogram(Z)
 plt.title("Hierarchical Clustering (Tanimoto Similarity)")
 plt.show()
 
-Step 3: Euclidean Distance Clustering
+## Step 3: Euclidean Distance Clustering
 
-Similarly, we perform hierarchical clustering using the Euclidean distance matrix to cluster compounds based on molecular weight.
-
-python
-Always show details
+###Similarly, we perform hierarchical clustering using the Euclidean distance matrix to cluster compounds based on molecular weight.
 
 # Perform clustering based on Euclidean distance
 Z = hierarchy.linkage(df_euclidean, method='ward')
@@ -81,18 +73,18 @@ dn = hierarchy.dendrogram(Z)
 plt.title("Hierarchical Clustering (Euclidean Distance)")
 plt.show()
 
-License
+## License
 
-This repository is licensed under the MIT License. Please see the LICENSE file for more details.
+### This repository is licensed under the MIT License. Please see the LICENSE file for more details.
 
-MIT License
+## MIT License
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+### Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation ### the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+### The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-Contact
+### THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL ### THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER ### DEALINGS IN THE SOFTWARE.
+### Contact
 
     Email: rikgangulybioinfo@gmail.com
     Computational Biology Laboratory, North-Eastern Hill University, Shillong, India """
